@@ -1,0 +1,8 @@
+tile.vulcanite_ore.name=Vulcanite Ore
+tile.ichorstone.name=Ichorstone
+
+item.yellow_vulcanite_shard.name=Vulcanite Shard
+item.purple_vulcanite_shard.name=Vulcanite Shard
+item.ichor.name=Ichor
+
+itemGroup.tabCore=The Core
