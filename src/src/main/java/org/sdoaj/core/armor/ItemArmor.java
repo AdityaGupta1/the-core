@@ -1,14 +1,15 @@
-package org.sdoaj.core.item;
+package org.sdoaj.core.armor;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
-import net.minecraft.item.Item;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.sdoaj.core.misc.ModCreativeTabs;
 
-public class ItemBasic extends Item {
-    public ItemBasic(String name) {
+public class ItemArmor extends net.minecraft.item.ItemArmor {
+    public ItemArmor(String name, ArmorMaterial material, EntityEquipmentSlot slot) {
+        super(material, 0, slot);
         setRegistryName(name);
         setUnlocalizedName(name);
         setCreativeTab(ModCreativeTabs.tabCore);

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:nether_boots" },
+  "pattern": [
+    "i i",
+    "ici"
+  ],
+  "key": {
+    "i": { "item": "core:nether_ingot" },
+    "c": { "item": "core:nether_core" }
+  }
+}

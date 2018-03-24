@@ -5,7 +5,7 @@ import net.minecraft.item.ItemStack;
 import org.sdoaj.core.item.ModItems;
 
 public class ModCreativeTabs {
-    public static final CreativeTabs tabMeme = (new CreativeTabs("tabCore") {
+    public static final CreativeTabs tabCore = (new CreativeTabs("tabCore") {
         @Override
         public ItemStack getTabIconItem() {
             return new ItemStack(ModItems.ichor);

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:nether_leggings" },
+  "pattern": [
+    "ici",
+    "i i",
+    "i i"
+  ],
+  "key": {
+    "i": { "item": "core:nether_ingot" },
+    "c": { "item": "core:nether_core" }
+  }
+}

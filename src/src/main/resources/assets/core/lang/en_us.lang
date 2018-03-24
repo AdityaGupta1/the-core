@@ -7,4 +7,9 @@ item.ichor.name=Ichor
 item.nether_ingot.name=Nether Ingot
 item.nether_core.name=Nether Core
 
+item.nether_helmet.name=Nether Helmet
+item.nether_chestplate.name=Nether Chestplate
+item.nether_leggings.name=Nether Leggings
+item.nether_boots.name=Nether Boots
+
 itemGroup.tabCore=The Core

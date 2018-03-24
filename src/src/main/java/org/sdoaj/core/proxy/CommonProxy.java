@@ -11,9 +11,11 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
+import org.sdoaj.core.armor.ModArmors;
 import org.sdoaj.core.block.ModBlocks;
 import org.sdoaj.core.item.ModItems;
 import org.sdoaj.core.misc.ModOreGenerator;
+import scala.actors.threadpool.Arrays;
 
 import java.util.ArrayList;
 
@@ -33,17 +35,22 @@ public class CommonProxy {
 
     private static ArrayList<Block> blocks = new ArrayList<>();
 
-    private static void registerBlock(Block block, IForgeRegistry<Block> registry) {
-        registry.register(block);
-        blocks.add(block);
+    private static void registerBlock(IForgeRegistry<Block> registry, Block... blocks) {
+        for (Block block : blocks) {
+            registry.register(block);
+        }
+
+        CommonProxy.blocks.addAll(Arrays.asList(blocks));
     }
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
         IForgeRegistry<Block> registry = event.getRegistry();
 
-        registerBlock(ModBlocks.vulcanite_ore, registry);
-        registerBlock(ModBlocks.ichorstone, registry);
+        registerBlock(registry,
+                ModBlocks.vulcanite_ore,
+                ModBlocks.ichorstone
+        );
     }
 
     @SubscribeEvent
@@ -52,11 +59,17 @@ public class CommonProxy {
 
         registerItemBlocks(registry);
 
-        registry.register(ModItems.yellow_vulcanite_shard);
-        registry.register(ModItems.purple_vulcanite_shard);
-        registry.register(ModItems.ichor);
-        registry.register(ModItems.nether_ingot);
-        registry.register(ModItems.nether_core);
+        registry.registerAll(
+                ModItems.yellow_vulcanite_shard,
+                ModItems.purple_vulcanite_shard,
+                ModItems.ichor,
+                ModItems.nether_ingot,
+                ModItems.nether_core,
+                ModArmors.nether_helmet,
+                ModArmors.nether_chestplate,
+                ModArmors.nether_leggings,
+                ModArmors.nether_boots
+        );
     }
 
     private static void registerItemBlocks(IForgeRegistry<Item> registry) {

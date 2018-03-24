@@ -23,7 +23,7 @@ public class ItemFood extends net.minecraft.item.ItemFood {
 
         setRegistryName(name);
         setUnlocalizedName(name);
-        setCreativeTab(ModCreativeTabs.tabMeme);
+        setCreativeTab(ModCreativeTabs.tabCore);
     }
 
     public ItemFood(String name, int amount, float saturation, boolean isWolfFood, boolean alwaysEdible, HashMap<PotionEffect, Float> effects) {

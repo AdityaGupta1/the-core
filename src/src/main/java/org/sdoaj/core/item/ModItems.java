@@ -1,11 +1,7 @@
 package org.sdoaj.core.item;
 
-import net.minecraft.init.MobEffects;
-import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-
-import java.util.HashMap;
 
 public class ModItems {
     public static ItemBasic yellow_vulcanite_shard = new ItemBasic("yellow_vulcanite_shard");

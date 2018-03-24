@@ -17,7 +17,7 @@ public class BlockBasic extends Block {
         setHardness(hardness);
         setResistance(resistance);
         setHarvestLevel(toolClass, harvestLevel);
-        setCreativeTab(ModCreativeTabs.tabMeme);
+        setCreativeTab(ModCreativeTabs.tabCore);
     }
 
     @SideOnly(Side.CLIENT)
