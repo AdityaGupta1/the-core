@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:nether_ingot" },
+  "pattern": [
+    " yy",
+    "piy",
+    "pp "
+  ],
+  "key": {
+    "y": { "item": "core:yellow_vulcanite_shard" },
+    "p": { "item": "core:purple_vulcanite_shard" },
+    "i": { "item": "core:ichor" }
+  }
+}

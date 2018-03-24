@@ -9,16 +9,18 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.sdoaj.core.block.ModBlocks;
 import org.sdoaj.core.item.ModItems;
+import org.sdoaj.core.misc.ModOreGenerator;
 
 import java.util.ArrayList;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
-
+        GameRegistry.registerWorldGenerator(new ModOreGenerator(), 1);
     }
 
     public void init(FMLInitializationEvent event) {
@@ -53,6 +55,8 @@ public class CommonProxy {
         registry.register(ModItems.yellow_vulcanite_shard);
         registry.register(ModItems.purple_vulcanite_shard);
         registry.register(ModItems.ichor);
+        registry.register(ModItems.nether_ingot);
+        registry.register(ModItems.nether_core);
     }
 
     private static void registerItemBlocks(IForgeRegistry<Item> registry) {

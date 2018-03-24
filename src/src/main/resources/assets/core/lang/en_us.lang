@@ -4,5 +4,7 @@ tile.ichorstone.name=Ichorstone
 item.yellow_vulcanite_shard.name=Vulcanite Shard
 item.purple_vulcanite_shard.name=Vulcanite Shard
 item.ichor.name=Ichor
+item.nether_ingot.name=Nether Ingot
+item.nether_core.name=Nether Core
 
 itemGroup.tabCore=The Core

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:nether_core" },
+  "pattern": [
+    "bib",
+    "igi",
+    "bib"
+  ],
+  "key": {
+    "b": { "item": "minecraft:blaze_powder" },
+    "i": { "item": "core:ichor" },
+    "g": { "item": "minecraft:ghast_tear" }
+  }
+}
