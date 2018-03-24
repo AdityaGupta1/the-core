@@ -15,7 +15,7 @@ public class ModArmors {
     public static ItemArmor nether_boots = new ItemArmor("nether_boots", NETHER_ARMOR_MATERIAL, EntityEquipmentSlot.FEET);
 
     @SideOnly(Side.CLIENT)
-    public static void initModelscm() {
+    public static void initModels() {
         nether_helmet.initModel();
         nether_chestplate.initModel();
         nether_leggings.initModel();
