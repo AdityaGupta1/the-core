@@ -8,7 +8,7 @@ public class ModCreativeTabs {
     public static final CreativeTabs tabCore = (new CreativeTabs("tabCore") {
         @Override
         public ItemStack getTabIconItem() {
-            return new ItemStack(ModItems.ichor);
+            return new ItemStack(ModItems.nether_core);
         }
     });
 }

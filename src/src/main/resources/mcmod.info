@@ -1,8 +1,8 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
+  "modid": "core",
+  "name": "The Core",
+  "description": "cool stuff",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

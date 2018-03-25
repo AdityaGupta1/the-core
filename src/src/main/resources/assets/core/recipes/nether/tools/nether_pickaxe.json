@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:nether_pickaxe" },
+  "pattern": [
+    "iii",
+    " s ",
+    " s "
+  ],
+  "key": {
+    "i": { "item": "core:nether_ingot" },
+    "s": { "item": "minecraft:stick" }
+  }
+}

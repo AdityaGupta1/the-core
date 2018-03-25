@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:nether_sword" },
+  "pattern": [
+    "i",
+    "i",
+    "s"
+  ],
+  "key": {
+    "i": { "item": "core:nether_ingot" },
+    "s": { "item": "minecraft:stick" }
+  }
+}

@@ -11,13 +11,14 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
-import org.sdoaj.core.armor.ModArmors;
-import org.sdoaj.core.block.ModBlocks;
-import org.sdoaj.core.item.ModItems;
+import static org.sdoaj.core.item.ModItems.*;
+import static org.sdoaj.core.block.ModBlocks.*;
+import static org.sdoaj.core.tools.ModTools.*;
+import static org.sdoaj.core.armor.ModArmors.*;
 import org.sdoaj.core.misc.ModOreGenerator;
-import scala.actors.threadpool.Arrays;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
@@ -48,8 +49,8 @@ public class CommonProxy {
         IForgeRegistry<Block> registry = event.getRegistry();
 
         registerBlock(registry,
-                ModBlocks.vulcanite_ore,
-                ModBlocks.ichorstone
+                vulcanite_ore,
+                ichorstone
         );
     }
 
@@ -60,15 +61,21 @@ public class CommonProxy {
         registerItemBlocks(registry);
 
         registry.registerAll(
-                ModItems.yellow_vulcanite_shard,
-                ModItems.purple_vulcanite_shard,
-                ModItems.ichor,
-                ModItems.nether_ingot,
-                ModItems.nether_core,
-                ModArmors.nether_helmet,
-                ModArmors.nether_chestplate,
-                ModArmors.nether_leggings,
-                ModArmors.nether_boots
+                yellow_vulcanite_shard,
+                purple_vulcanite_shard,
+                ichor,
+                nether_ingot,
+                nether_core,
+
+                nether_sword,
+                nether_axe,
+                nether_pickaxe,
+                nether_shovel,
+
+                nether_helmet,
+                nether_chestplate,
+                nether_leggings,
+                nether_boots
         );
     }
 

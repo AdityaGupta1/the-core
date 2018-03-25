@@ -8,6 +8,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import org.sdoaj.core.armor.ModArmors;
 import org.sdoaj.core.block.ModBlocks;
 import org.sdoaj.core.item.ModItems;
+import org.sdoaj.core.tools.ModTools;
 
 @Mod.EventBusSubscriber(Side.CLIENT)
 public class ClientProxy extends CommonProxy {
@@ -20,6 +21,7 @@ public class ClientProxy extends CommonProxy {
     public static void registerModels(ModelRegistryEvent event) {
         ModItems.initModels();
         ModBlocks.initModels();
+        ModTools.initModels();
         ModArmors.initModels();
     }
 }

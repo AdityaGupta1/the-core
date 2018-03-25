@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:nether_axe" },
+  "pattern": [
+    "ii",
+    "is",
+    " s"
+  ],
+  "key": {
+    "i": { "item": "core:nether_ingot" },
+    "s": { "item": "minecraft:stick" }
+  }
+}
