@@ -17,4 +17,12 @@ item.nether_chestplate.name=Nether Chestplate
 item.nether_leggings.name=Nether Leggings
 item.nether_boots.name=Nether Boots
 
+tile.skystone_ore.name=Skystone Ore
+tile.dragonite.name=Dragonite
+tile.void_pearl_ore.name=Void Pearl Stone
+
+item.skystone.name=Skystone
+item.dragonite_crystal.name=Dragonite Crystal
+item.void_pearl.name=Void Pearl
+
 itemGroup.tabCore=The Core

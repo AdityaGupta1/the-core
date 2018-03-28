@@ -12,7 +12,7 @@ import org.sdoaj.core.misc.ModCreativeTabs;
 
 import java.util.HashMap;
 
-public class ItemFood extends net.minecraft.item.ItemFood {
+public class ItemFood extends net.minecraft.item.ItemFood implements ItemWithModel {
     private HashMap<PotionEffect, Float> effects;
 
     public ItemFood(String name, int amount, float saturation, boolean isWolfFood, boolean alwaysEdible) {
@@ -20,10 +20,10 @@ public class ItemFood extends net.minecraft.item.ItemFood {
         if (alwaysEdible) {
             setAlwaysEdible();
         }
-
         setRegistryName(name);
         setUnlocalizedName(name);
         setCreativeTab(ModCreativeTabs.tabCore);
+        ModItems.items.add(this);
     }
 
     public ItemFood(String name, int amount, float saturation, boolean isWolfFood, boolean alwaysEdible, HashMap<PotionEffect, Float> effects) {
@@ -41,6 +41,7 @@ public class ItemFood extends net.minecraft.item.ItemFood {
         }
     }
 
+    @Override
     @SideOnly(Side.CLIENT)
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));

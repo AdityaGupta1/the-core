@@ -12,7 +12,7 @@ public class Main {
 
     public static final String MODID = "core";
     public static final String MODNAME = "The Core";
-    public static final String VERSION = "1.12.x-0.1";
+    public static final String VERSION = "1.12.x";
 
     @SidedProxy(clientSide = "org.sdoaj.core.proxy.ClientProxy", serverSide = "org.sdoaj.core.proxy.ServerProxy")
     public static CommonProxy proxy;
