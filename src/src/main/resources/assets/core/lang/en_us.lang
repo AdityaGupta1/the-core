@@ -24,5 +24,6 @@ tile.void_pearl_ore.name=Void Pearl Stone
 item.skystone.name=Skystone
 item.dragonite_crystal.name=Dragonite Crystal
 item.void_pearl.name=Void Pearl
+item.ender_core.name=Ender Core
 
 itemGroup.tabCore=The Core

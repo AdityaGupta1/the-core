@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:ender_core" },
+  "pattern": [
+    "dvs",
+    "vev",
+    "svd"
+  ],
+  "key": {
+    "s": { "item": "core:skystone" },
+    "v": { "item": "core:void_pearl" },
+    "d": { "item": "core:dragonite_crystal" },
+    "e": { "item": "minecraft:ender_eye" }
+  }
+}
