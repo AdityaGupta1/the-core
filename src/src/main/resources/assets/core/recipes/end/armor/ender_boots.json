@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:ender_boots" },
+  "pattern": [
+    "c c",
+    "cnc"
+  ],
+  "key": {
+    "n": { "item": "core:nether_boots" },
+    "c": { "item": "core:ender_core" }
+  }
+}

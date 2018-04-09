@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:ender_helmet" },
+  "pattern": [
+    "cnc",
+    "c c"
+  ],
+  "key": {
+    "n": { "item": "core:nether_helmet" },
+    "c": { "item": "core:ender_core" }
+  }
+}

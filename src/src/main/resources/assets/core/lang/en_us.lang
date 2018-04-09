@@ -33,3 +33,8 @@ item.ender_sword.name=Ender Sword
 item.ender_axe.name=Ender Axe
 item.ender_pickaxe.name=Ender Pickaxe
 item.ender_shovel.name=Ender Shovel
+
+item.ender_helmet.name=Ender Helmet
+item.ender_chestplate.name=Ender Chestplate
+item.ender_leggings.name=Ender Leggings
+item.ender_boots.name=Ender Boots

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:ender_chestplate" },
+  "pattern": [
+    "c c",
+    "cnc",
+    "ccc"
+  ],
+  "key": {
+    "n": { "item": "core:nether_chestplate" },
+    "c": { "item": "core:ender_core" }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:ender_leggings" },
+  "pattern": [
+    "cnc",
+    "c c",
+    "c c"
+  ],
+  "key": {
+    "n": { "item": "core:nether_leggings" },
+    "c": { "item": "core:ender_core" }
+  }
+}
