@@ -1,6 +1,6 @@
 {
   "parent": "item/handheld",
   "textures": {
-    "layer0": "core:items/nether_sword"
+    "layer0": "core:items/ender_pickaxe"
   }
 }

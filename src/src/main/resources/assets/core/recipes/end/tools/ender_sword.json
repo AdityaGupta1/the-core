@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:ender_sword" },
+  "pattern": [
+    "c",
+    "c",
+    "n"
+  ],
+  "key": {
+    "n": { "item": "core:nether_sword" },
+    "c": { "item": "core:ender_core" }
+  }
+}

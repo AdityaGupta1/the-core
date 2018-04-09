@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:ender_pickaxe" },
+  "pattern": [
+    "ScD",
+    " s ",
+    " n "
+  ],
+  "key": {
+    "n": { "item": "core:nether_pickaxe" },
+    "s": { "item": "core:obsidian_rod" },
+    "c": { "item": "core:ender_core" },
+    "S": { "item": "core:skystone" },
+    "D": { "item": "core:dragonite_crystal" }
+  }
+}

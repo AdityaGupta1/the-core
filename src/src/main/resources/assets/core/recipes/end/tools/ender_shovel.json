@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:ender_shovel" },
+  "pattern": [
+    "c",
+    "s",
+    "n"
+  ],
+  "key": {
+    "n": { "item": "core:nether_shovel" },
+    "s": { "item": "core:obsidian_rod" },
+    "c": { "item": "core:ender_core" }
+  }
+}

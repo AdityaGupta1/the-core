@@ -1,3 +1,5 @@
+itemGroup.tabCore=The Core
+
 tile.vulcanite_ore.name=Vulcanite Ore
 tile.ichorstone.name=Ichorstone
 
@@ -24,6 +26,10 @@ tile.void_pearl_ore.name=Void Pearl Stone
 item.skystone.name=Skystone
 item.dragonite_crystal.name=Dragonite Crystal
 item.void_pearl.name=Void Pearl
+item.obsidian_rod.name=Obsidian Rod
 item.ender_core.name=Ender Core
 
-itemGroup.tabCore=The Core
+item.ender_sword.name=Ender Sword
+item.ender_axe.name=Ender Axe
+item.ender_pickaxe.name=Ender Pickaxe
+item.ender_shovel.name=Ender Shovel

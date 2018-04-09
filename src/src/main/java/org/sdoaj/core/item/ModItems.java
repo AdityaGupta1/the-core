@@ -18,6 +18,7 @@ public class ModItems {
     public static final ItemBasic skystone = new ItemBasic("skystone");
     public static final ItemBasic dragonite_crystal = new ItemBasic("dragonite_crystal");
     public static final ItemBasic void_pearl = new ItemBasic("void_pearl");
+    public static final ItemBasic obsidian_rod = new ItemBasic("obsidian_rod");
     public static final ItemBasic ender_core = new ItemBasic("ender_core");
 
     @SideOnly(Side.CLIENT)

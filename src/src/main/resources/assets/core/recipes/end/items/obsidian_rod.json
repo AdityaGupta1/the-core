@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "result": { "item": "core:obsidian_rod", "count": 4 },
+  "pattern": [
+    "o",
+    "o"
+  ],
+  "key": {
+    "o": { "item": "minecraft:obsidian" }
+  }
+}
