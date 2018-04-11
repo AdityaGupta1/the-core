@@ -1,4 +1,4 @@
-package org.sdoaj.core.item;
+package org.sdoaj.core.items;
 
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;

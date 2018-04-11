@@ -3,7 +3,7 @@ package org.sdoaj.core.tools;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
-import org.sdoaj.core.item.ModItems;
+import org.sdoaj.core.items.ModItems;
 
 public class ModTools {
     public static final Item.ToolMaterial NETHER_TOOL_MATERIAL = EnumHelper.addToolMaterial(

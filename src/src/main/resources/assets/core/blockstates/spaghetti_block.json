@@ -1,0 +1,29 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "core:spaghetti_block"
+  },
+  "variants": {
+    "normal": [
+      { "model": "core:spaghetti_block" },
+      { "model": "core:spaghetti_block", "x": 90 },
+      { "model": "core:spaghetti_block", "x": 180 },
+      { "model": "core:spaghetti_block", "x": 270 },
+      { "model": "core:spaghetti_block", "y": 90 },
+      { "model": "core:spaghetti_block", "y": 90, "x": 90 },
+      { "model": "core:spaghetti_block", "y": 90, "x": 180 },
+      { "model": "core:spaghetti_block", "y": 90, "x": 270 },
+      { "model": "core:spaghetti_block", "y": 180 },
+      { "model": "core:spaghetti_block", "y": 180, "x": 90 },
+      { "model": "core:spaghetti_block", "y": 180, "x": 180 },
+      { "model": "core:spaghetti_block", "y": 180, "x": 270 },
+      { "model": "core:spaghetti_block", "y": 270 },
+      { "model": "core:spaghetti_block", "y": 270, "x": 90 },
+      { "model": "core:spaghetti_block", "y": 270, "x": 180 },
+      { "model": "core:spaghetti_block", "y": 270, "x": 270 }
+    ],
+    "inventory": [
+      {}
+    ]
+  }
+}

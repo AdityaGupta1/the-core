@@ -5,8 +5,8 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import org.sdoaj.core.item.ItemWithModel;
-import org.sdoaj.core.item.ModItems;
+import org.sdoaj.core.items.ItemWithModel;
+import org.sdoaj.core.items.ModItems;
 import org.sdoaj.core.misc.ModCreativeTabs;
 
 public class ItemArmor extends net.minecraft.item.ItemArmor implements ItemWithModel {

@@ -1,4 +1,4 @@
-package org.sdoaj.core.item;
+package org.sdoaj.core.items;
 
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

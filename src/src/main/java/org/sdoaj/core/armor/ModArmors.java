@@ -5,7 +5,7 @@ import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import org.sdoaj.core.Main;
-import org.sdoaj.core.item.ModItems;
+import org.sdoaj.core.items.ModItems;
 
 public class ModArmors {
     public static final ItemArmor.ArmorMaterial NETHER_ARMOR_MATERIAL =

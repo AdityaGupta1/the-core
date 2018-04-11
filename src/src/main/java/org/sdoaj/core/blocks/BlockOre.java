@@ -1,4 +1,4 @@
-package org.sdoaj.core.block;
+package org.sdoaj.core.blocks;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;

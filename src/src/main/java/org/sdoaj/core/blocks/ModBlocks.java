@@ -1,11 +1,10 @@
-package org.sdoaj.core.block;
+package org.sdoaj.core.blocks;
 
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import org.sdoaj.core.item.ItemWithModel;
-import org.sdoaj.core.item.ModItems;
+import org.sdoaj.core.items.ModItems;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,6 +35,9 @@ public class ModBlocks {
             6, 50, "pickaxe", 4, new HashMap<Item, int[]>() {{
         put(ModItems.void_pearl, new int[]{4, 6});
     }});
+
+    public static final BlockBasic spaghetti_block = new BlockBasic("spaghetti_block", Material.ROCK,
+            2, 10, "pickaxe", 5);
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {

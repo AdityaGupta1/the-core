@@ -38,3 +38,6 @@ item.ender_helmet.name=Ender Helmet
 item.ender_chestplate.name=Ender Chestplate
 item.ender_leggings.name=Ender Leggings
 item.ender_boots.name=Ender Boots
+
+tile.spaghetti_block.name=Spaghetti
+fluid.sauce=Sauce

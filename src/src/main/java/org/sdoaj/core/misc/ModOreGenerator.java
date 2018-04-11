@@ -6,7 +6,7 @@ import net.minecraft.world.chunk.IChunkProvider;
 import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
-import org.sdoaj.core.block.ModBlocks;
+import org.sdoaj.core.blocks.ModBlocks;
 
 import java.util.Random;
 

@@ -12,19 +12,23 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.sdoaj.core.armor.ModArmors;
-import org.sdoaj.core.block.BlockBasic;
-import org.sdoaj.core.block.ModBlocks;
-import org.sdoaj.core.item.ModItems;
+import org.sdoaj.core.blocks.BlockBasic;
+import org.sdoaj.core.blocks.ModBlocks;
+import org.sdoaj.core.dimensions.ModDimensions;
+import org.sdoaj.core.fluids.ModFluids;
+import org.sdoaj.core.items.ModItems;
 import org.sdoaj.core.misc.ModOreGenerator;
 import org.sdoaj.core.tools.ModTools;
 
 @Mod.EventBusSubscriber
 public class CommonProxy {
     public void preInit(FMLPreInitializationEvent event) {
+        ModDimensions.init();
         GameRegistry.registerWorldGenerator(new ModOreGenerator(), 1);
 
         new ModTools();
         new ModArmors();
+        new ModFluids().init();
     }
 
     public void init(FMLInitializationEvent event) {
