@@ -6,22 +6,23 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidStack;
+import org.sdoaj.core.Main;
 
 public class FluidBasic extends Fluid {
-    private int mapColor = 0xFFFFFFFF;
     private SoundEvent emptySound = SoundEvents.ITEM_BUCKET_EMPTY;
     private SoundEvent fillSound = SoundEvents.ITEM_BUCKET_FILL;
-    private Material material = Material.LAVA;
+    private Material material = Material.WATER;
 
-    public FluidBasic(String fluidName, ResourceLocation still, ResourceLocation flowing, int mapColor) {
-        super(fluidName, still, flowing);
-        setColor(mapColor);
+    public FluidBasic(String fluidName, int color) {
+        super(fluidName, new ResourceLocation(Main.MODID,"blocks/fluids/" + fluidName + "_still"),
+                new ResourceLocation(Main.MODID,"blocks/fluids/" + fluidName + "_flow"));
+        setColor(color);
         ModFluids.fluids.add(this);
     }
 
     @Override
     public int getColor() {
-        return mapColor;
+        return 0xFFFFFFFF;
     }
 
     @Override
@@ -34,13 +35,13 @@ public class FluidBasic extends Fluid {
         return fillSound;
     }
 
+    public Material getMaterial() {
+        return material;
+    }
+
     public FluidBasic setMaterial(Material material) {
         this.material = material;
         return this;
-    }
-
-    public Material getMaterial() {
-        return material;
     }
 
     @Override

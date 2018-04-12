@@ -3,6 +3,7 @@ package org.sdoaj.core.proxy;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -13,8 +14,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.sdoaj.core.armor.ModArmors;
 import org.sdoaj.core.blocks.BlockBasic;
+import org.sdoaj.core.blocks.BlockWithModel;
 import org.sdoaj.core.blocks.ModBlocks;
 import org.sdoaj.core.dimensions.ModDimensions;
+import org.sdoaj.core.fluids.FluidBasic;
 import org.sdoaj.core.fluids.ModFluids;
 import org.sdoaj.core.items.ModItems;
 import org.sdoaj.core.misc.ModOreGenerator;
@@ -41,7 +44,9 @@ public class CommonProxy {
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
-        event.getRegistry().registerAll(ModBlocks.blocks.toArray(new BlockBasic[0]));
+        IForgeRegistry<Block> registry = event.getRegistry();
+
+        registry.registerAll(ModBlocks.blocks.toArray(new Block[0]));
     }
 
     @SubscribeEvent
@@ -52,9 +57,15 @@ public class CommonProxy {
     }
 
     private static void registerItemBlocks(IForgeRegistry<Item> registry) {
-        for (Block block : ModBlocks.blocks) {
+        for (BlockWithModel blockWithModel : ModBlocks.blocks) {
+            Block block = (Block) blockWithModel;
             registry.register(new ItemBlock(block).setRegistryName(block.getRegistryName()));
         }
+    }
+
+    @SubscribeEvent
+    public static void renderFluids(ModelRegistryEvent event) {
+        ModFluids.renderFluids();
     }
 }
 

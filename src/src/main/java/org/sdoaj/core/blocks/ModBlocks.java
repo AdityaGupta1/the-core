@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 
 public class ModBlocks {
-    public static final List<BlockBasic> blocks = new ArrayList<>();
+    public static final List<BlockWithModel> blocks = new ArrayList<>();
 
     public static final BlockOre vulcanite_ore = new BlockOre("vulcanite_ore", Material.ROCK,
             4, 30, "pickaxe", 3, new HashMap<Item, int[]>() {{
@@ -41,7 +41,7 @@ public class ModBlocks {
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {
-        for (BlockBasic block : blocks) {
+        for (BlockWithModel block : blocks) {
             block.initModel();
         }
     }
