@@ -38,6 +38,8 @@ public class ModBlocks {
 
     public static final BlockBasic spaghetti_block = new BlockBasic("spaghetti_block", Material.ROCK,
             2, 10, "pickaxe", 5);
+    public static final BlockBasic meat_block = new BlockBasic("meat_block", Material.ROCK,
+            5, 20, "pickaxe", 5);
 
     @SideOnly(Side.CLIENT)
     public static void initModels() {

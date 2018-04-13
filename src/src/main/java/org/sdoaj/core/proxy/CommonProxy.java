@@ -3,6 +3,7 @@ package org.sdoaj.core.proxy;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -13,6 +14,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.registries.IForgeRegistry;
 import org.sdoaj.core.armor.ModArmors;
+import org.sdoaj.core.biomes.ModBiomes;
 import org.sdoaj.core.blocks.BlockBasic;
 import org.sdoaj.core.blocks.BlockWithModel;
 import org.sdoaj.core.blocks.ModBlocks;
@@ -35,11 +37,18 @@ public class CommonProxy {
     }
 
     public void init(FMLInitializationEvent event) {
-
+        ModBiomes.init();
     }
 
     public void postInit(FMLPostInitializationEvent event) {
 
+    }
+
+    @SubscribeEvent
+    public static void registerBiomes(RegistryEvent.Register<Biome> event) {
+        for (Biome biome : ModBiomes.biomes) {
+            event.getRegistry().register(biome);
+        }
     }
 
     @SubscribeEvent

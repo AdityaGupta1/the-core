@@ -10,6 +10,8 @@ import net.minecraftforge.fml.common.event.FMLServerStartingEvent;
 import org.sdoaj.core.misc.TeleportCommand;
 import org.sdoaj.core.proxy.CommonProxy;
 
+import java.util.Random;
+
 @Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION, useMetadata = true)
 public class Main {
     public static final String MODID = "core";
@@ -18,6 +20,8 @@ public class Main {
 
     @SidedProxy(clientSide = "org.sdoaj.core.proxy.ClientProxy", serverSide = "org.sdoaj.core.proxy.ServerProxy")
     public static CommonProxy proxy;
+
+    public static final Random random = new Random();
 
     @Mod.Instance
     public static Main instance;

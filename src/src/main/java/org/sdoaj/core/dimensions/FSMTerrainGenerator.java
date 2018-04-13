@@ -92,7 +92,7 @@ public class FSMTerrainGenerator {
 
                 for (int l1 = -b0; l1 <= b0; ++l1) {
                     for (int i2 = -b0; i2 <= b0; ++i2) {
-                        Biome biome = this.biomesForGeneration[j1 + 2 + (k1 + 2) * 10];
+                        Biome biome = this.biomesForGeneration[0];
                         float baseHeight = biome.getBaseHeight();
                         float variation = biome.getHeightVariation();
 

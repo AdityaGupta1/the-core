@@ -12,6 +12,7 @@ import net.minecraft.world.gen.IChunkGenerator;
 import net.minecraft.world.gen.MapGenBase;
 import net.minecraft.world.gen.MapGenCaves;
 import net.minecraftforge.event.terraingen.TerrainGen;
+import org.sdoaj.core.biomes.ModBiomes;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -22,13 +23,10 @@ import static net.minecraftforge.event.terraingen.InitMapGenEvent.EventType.CAVE
 public class FSMChunkGenerator implements IChunkGenerator {
     private final World worldObj;
     private Random random;
-    private Biome[] biomesForGeneration;
+    private Biome[] biomesForGeneration = {ModBiomes.spaghetti};
 
     private MapGenBase caveGenerator = new MapGenCaves();
     private FSMTerrainGenerator terraingen = new FSMTerrainGenerator();
-
-    // need to add mobs to this
-    private List<Biome.SpawnListEntry> mobs;
 
     public FSMChunkGenerator(World worldObj) {
         this.worldObj = worldObj;
@@ -42,15 +40,8 @@ public class FSMChunkGenerator implements IChunkGenerator {
     public Chunk generateChunk(int x, int z) {
         ChunkPrimer chunkprimer = new ChunkPrimer();
 
-        // Setup biomes for terraingen
-        this.biomesForGeneration = this.worldObj.getBiomeProvider().getBiomesForGeneration(this.biomesForGeneration, x * 4 - 2, z * 4 - 2, 10, 10);
         terraingen.setBiomesForGeneration(biomesForGeneration);
         terraingen.generate(x, z, chunkprimer);
-
-        // Setup biomes again for actual biome decoration
-        this.biomesForGeneration = this.worldObj.getBiomeProvider().getBiomes(this.biomesForGeneration, x * 16, z * 16, 16, 16);
-        // This will replace stone with the biome specific stones
-        terraingen.replaceBiomeBlocks(x, z, chunkprimer, this, biomesForGeneration);
 
         // Generate caves
         this.caveGenerator.generate(this.worldObj, x, z, chunkprimer);
@@ -59,7 +50,7 @@ public class FSMChunkGenerator implements IChunkGenerator {
 
         byte[] biomeArray = chunk.getBiomeArray();
         for (int i = 0; i < biomeArray.length; ++i) {
-            biomeArray[i] = (byte)Biome.getIdForBiome(this.biomesForGeneration[i]);
+            biomeArray[i] = (byte)Biome.getIdForBiome(this.biomesForGeneration[0]);
         }
 
         chunk.generateSkylightMap();
@@ -87,16 +78,7 @@ public class FSMChunkGenerator implements IChunkGenerator {
 
     @Override
     public List<Biome.SpawnListEntry> getPossibleCreatures(EnumCreatureType creatureType, BlockPos pos) {
-        // If you want normal creatures appropriate for this biome then uncomment the
-        // following two lines:
-//        Biome biome = this.worldObj.getBiome(pos);
-//        return biome.getSpawnableList(creatureType);
-
-        if (creatureType == EnumCreatureType.MONSTER){
-            return mobs;
-        }
         return ImmutableList.of();
-
     }
 
     @Nullable
