@@ -40,5 +40,6 @@ item.ender_leggings.name=Ender Leggings
 item.ender_boots.name=Ender Boots
 
 tile.spaghetti_block.name=Spaghetti
+tile.meat_block.name=Meat Block
 fluid.sauce=Sauce
 tile.sauce.name=Sauce

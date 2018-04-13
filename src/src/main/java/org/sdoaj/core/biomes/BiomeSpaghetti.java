@@ -16,13 +16,7 @@ public class BiomeSpaghetti extends Biome {
 
     public BiomeSpaghetti(Biome.BiomeProperties properties) {
         super(properties);
-        this.spawnableCreatureList.clear();
-        this.topBlock = ModBlocks.spaghetti_block.getDefaultState();
-        this.fillerBlock = ModBlocks.spaghetti_block.getDefaultState();
-        this.decorator.treesPerChunk = -999;
-        this.decorator.deadBushPerChunk = -999;
-        this.decorator.reedsPerChunk = -999;
-        this.decorator.cactiPerChunk = -999;
+        this.topBlock = this.fillerBlock = ModBlocks.spaghetti_block.getDefaultState();
         this.spawnableCreatureList.clear();
         this.spawnableMonsterList.clear();
 
